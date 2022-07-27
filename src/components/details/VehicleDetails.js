@@ -21,7 +21,7 @@ export default function VehicleDetails(){
             .then((response) => response.json())
             .then((car) => {
                 setImage(car.image)
-                setName(car.make + car.model)
+                setName(`${car.make} ${car.model}`)
                 setYear(car.year)
                 setEngine(car.engine)
                 setMileage(car.mileage)
@@ -37,7 +37,14 @@ export default function VehicleDetails(){
     return(
         <div className="container">
             <center>
-            <img src={image} style={{height: 200 + 'px', width: 200 + 'px',}} />
+                <h2>{name}</h2>
+                <img src={image} style={{height: 250 + 'px', width: 300 + 'px',}} />
+                <p>Important information about this {name};</p>
+                <p>Year of Manufacture: {year},</p>
+                <p>Engine: {engine},</p>
+                <p>Mileage: {mileage},</p>
+                <p>Location: {location},</p>
+                <p>Price: {price},</p>
 
             </center>
         </div>
