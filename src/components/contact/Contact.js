@@ -18,6 +18,7 @@ export default function Contact() {
                     <li>Email: serendipity.motors@gmail.com</li>
                     <li>Facebook, Twitter, Instagram: @Serendipity_Motors</li>
                 </ul>
+                <span>Visit us at our offices located on the 2nd floor of Adlife Plaza off Ring Road Kilimani on Chania Avenue, Nairobi.</span>
                 <h3>Happy Shopping</h3>
             </div>    
         </div>
