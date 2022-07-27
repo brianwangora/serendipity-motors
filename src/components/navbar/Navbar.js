@@ -8,6 +8,7 @@ export default function Navbar(){
                 <Link className="nav-link" to="/">| HOME | </Link>
                 <Link className="nav-link" to="/contact">| CONTACT | </Link>
                 <Link className="nav-link" to="/inventory">| INVENTORY | </Link>
+                <Link className="nav-link" to="/vehicleform">| ADD A VEHICLE | </Link>
             </div>
         </nav>
     )
