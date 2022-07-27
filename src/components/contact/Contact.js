@@ -14,7 +14,7 @@ export default function Contact() {
                 <Header isDarkMode={isDarkMode} onDarkModeClick={handleDarkModeClick} />
                 <p>You can reach us on:</p>
                 <ul>
-                    <li>Tel: 0721904875, 0715364327</li>
+                    <li>Tel: 0721904875, 0715904875, 0734904875</li>
                     <li>Email: serendipity.motors@gmail.com</li>
                     <li>Facebook, Twitter, Instagram: @Serendipity_Motors</li>
                 </ul>

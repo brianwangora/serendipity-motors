@@ -19,7 +19,7 @@ export default function Inventory(){
         vehicleFetcher, []
     )
 
-    let vehicleCards = cars.map((car) => (<VehicleCard carName={car.make+car.model} carImage={car.image} carId={car.id} key={car.id}/>)) 
+    let vehicleCards = cars.map((car) => (<VehicleCard carName={`${car.make} ${car.model}`} carImage={car.image} carId={car.id} key={car.id}/>)) 
 
     return(
         <div className="container">
