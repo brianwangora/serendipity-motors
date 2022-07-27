@@ -10,6 +10,7 @@ The API used is: "https://salty-brook-11310.herokuapp.com/cars"
 ## Live Site
 The project is hosted on: ""
 
+## Description
 This is a single web application with 1 index.html file for a car dealership called Serendipity Motors.
 
 It has 9 components; App.js, VehicleCard.js, Contact.js, VehicleDetails.js, Header.js, Home.js, Inventory.js, Navbar.js and VehicleForm.js
