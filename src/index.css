@@ -96,7 +96,8 @@ h2 {
 }
 
 .nav-link {
-  color: rgb(219, 136, 136)
+  color: rgb(28, 25, 25);
+  font-weight: 600;
 }
 
 center img {
