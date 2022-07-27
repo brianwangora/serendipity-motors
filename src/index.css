@@ -69,3 +69,10 @@ header button {
 h1 {
   font-weight: 700;
 }
+
+h3 {
+  text-align: center;
+  font-size: large;
+  font-weight: 600;
+  font-style: italic;
+}

@@ -13,7 +13,7 @@ export default function Home () {
             <div className={"App " + (isDarkMode ? "dark" : "light")}>
                 <Header isDarkMode={isDarkMode} onDarkModeClick={handleDarkModeClick} />
                 <p>Welcome to Serendipity Motors,</p>
-                <p>Kenya's leading luxury car dealership</p>
+                <p>Kenya's leading luxury car dealership.</p>
                 <p>Our purpose is to help you own the luxury car of your dreams.</p>
                 <p>Our brands:</p>
                 <div id="brands">
@@ -36,6 +36,26 @@ export default function Home () {
                         id="porsche"
                         src="https://di-uploads-pod3.dealerinspire.com/porscheoffremont/uploads/2018/09/porsche-logo.jpg"
                         alt="Porsche"
+                    />
+                    <img
+                        id="ford"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Ford_logo_flat.svg/440px-Ford_logo_flat.svg.png"
+                        alt="Ford"
+                    />
+                    <img
+                        id="bmw"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/BMW_logo_%28gray%29.svg/360px-BMW_logo_%28gray%29.svg.png"
+                        alt="BMW"
+                    />
+                    <img 
+                        id="audi"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Audi-Logo_2016.svg/440px-Audi-Logo_2016.svg.png"
+                        alt="Audi"
+                    />
+                    <img
+                        id="volkswagen"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Volkswagen_logo_2019.svg/300px-Volkswagen_logo_2019.svg.png"
+                        alt="Volkswagen"
                     />
                 </div>
             </div>

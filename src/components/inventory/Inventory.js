@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import VehicleCard from "../card/VehicleCard";
 
-const VEHICLES = "http://localhost:3000/cars"
+const VEHICLES = "https://salty-brook-11310.herokuapp.com/cars"
 
 export default function Inventory(){
     const [cars, setCars] = useState([])
@@ -23,6 +23,7 @@ export default function Inventory(){
 
     return(
         <div className="container">
+            <h1>SERENDIPITY MOTORS</h1>
             Current Inventory Available
             <div className="row">
                 {vehicleCards}

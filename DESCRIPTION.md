@@ -1,7 +1,7 @@
 # SERENDIPITY MOTORS
 
 ## API
-The API used is: ""
+The API used is: "https://salty-brook-11310.herokuapp.com/cars"
 
 This is a single web application for a car dealership called Serendipity Motors.
 it has 3 client-side routes;
