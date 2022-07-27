@@ -24,7 +24,7 @@ export default function Inventory(){
     return(
         <div className="container">
             <h1>SERENDIPITY MOTORS</h1>
-            Current Inventory Available
+            <p>Current Inventory Available</p>
             <div className="row">
                 {vehicleCards}
             </div>
