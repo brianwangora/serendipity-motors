@@ -79,9 +79,26 @@ h3 {
 
 center {
   background-color: grey;
+  outline: auto;
+  outline-style: round;
+  border-radius: 25px;
+  height: 600px;
+  width: 600px;
+  padding-left: 0%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
+h2 {
+  font-weight: 600;
 }
 
 .nav-link {
-  color: red
+  color: rgb(219, 136, 136)
+}
+
+center img {
+  border-radius: 25px;
 }
