@@ -15,7 +15,7 @@ This is a single web application with 1 index.html file for a car dealership cal
 
 It has 9 components; App.js, VehicleCard.js, Contact.js, VehicleDetails.js, Header.js, Home.js, Inventory.js, Navbar.js and VehicleForm.js
 
-it has 4 client-side routes; Home, Contact, Inventory and Add a Vehicle.
+it has 4 client-side routes; Home, Contact, Inventory and Add a Vehicle. Whereby Inventory has nested routes that point to more information.
 
 ### 1. Home
 Here the user is presented with information about the dealership and can toggle dark mode or light mode depending on preference.
@@ -25,7 +25,7 @@ Here the user finds contact information belonging to the dealership.
 
 ### 3. Inventory
 Here the user finds the dealership's inventory which is obtained using a GET method to obtain data from the API.
-by clicking on the "DETAILS" button, the user is directed to a page that contains all the information about the car that has been clicked.
+By clicking on the "DETAILS" button, the user is directed to a page that contains all the information about the car that has been clicked.
 
 ### 4. Add A Vehicle
 Here the user can add a vehicle of choice to a form.

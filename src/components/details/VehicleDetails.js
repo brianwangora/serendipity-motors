@@ -45,7 +45,6 @@ export default function VehicleDetails(){
                 <p>Mileage: {mileage},</p>
                 <p>Location: {location},</p>
                 <p>Price: {price},</p>
-
             </center>
         </div>
     )
