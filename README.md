@@ -13,7 +13,7 @@ The project is hosted on: ""
 ## Description
 This is a single web application with 1 index.html file for a car dealership called Serendipity Motors.
 
-It has 9 components; App.js, VehicleCard.js, Contact.js, VehicleDetails.js, Header.js, Home.js, Inventory.js, Navbar.js and VehicleForm.js
+It has 9 component folders; App, Card, Contact, Details, Header, Home, Inventory, Navbar and Form.
 
 it has 4 client-side routes; Home, Contact, Inventory and Add a Vehicle. Whereby Inventory has nested routes that point to more information.
 
@@ -29,6 +29,7 @@ By clicking on the "DETAILS" button, the user is directed to a page that contain
 
 ### 4. Add A Vehicle
 Here the user can add a vehicle of choice to a form.
+This will result in a POST request being made then the new vehicle will be displayed in Inventory along with the others.
 
 
 
