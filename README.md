@@ -8,7 +8,7 @@
 The API used is: "https://salty-brook-11310.herokuapp.com/cars"
 
 ## Live Site
-The project is hosted on: ""
+The project is hosted on: "https://brianwangora.github.io/serendipity-motors"
 
 ## Description
 This is a single web application with 1 index.html file for a car dealership called Serendipity Motors.
