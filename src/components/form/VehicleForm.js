@@ -43,42 +43,47 @@ export default function VehicleForm({ onAddVehicle }){
         <div className="container">
                 <h1>SERENDIPITY MOTORS</h1>
                 <form className="NewVehicle" onSubmit={handleSubmit} >
-                    <label>
-                        Make:
-                        <input
-                            type="text"
-                            name="make"
-                            value={model}
-                            onChange={(e) => setMake(e.target.value)}
-                        /> 
-                    </label>
-                    <label>
-                        Model:
-                        <input
-                            type="text"
-                            name="model"
-                            value={model}
-                            onChange={(e) => setModel(e.target.value)}
-                        /> 
-                    </label>
-                    <label>
-                        Year:
-                        <input
-                            type="text"
-                            name="year"
-                            value={year}
-                            onChange={(e) => setYear(e.target.value)}
-                        /> 
-                    </label>
-                    <label>
-                        Engine:
-                        <input
-                            type="text"
-                            name="engine"
-                            value={engine}
-                            onChange={(e) => setEngine(e.target.value)}
-                        /> 
-                    </label>
+                    <p>
+                        <label>
+                            Make:
+                            <input
+                                type="text"
+                                name="make"
+                                value={model}
+                                onChange={(e) => setMake(e.target.value)}
+                            /> 
+                        </label>
+                        <label>
+                            Model:
+                            <input
+                                type="text"
+                                name="model"
+                                value={model}
+                                onChange={(e) => setModel(e.target.value)}
+                            /> 
+                        </label>    
+                    </p>
+                    <p>
+                        <label>
+                            Year:
+                            <input
+                                type="text"
+                                name="year"
+                                value={year}
+                                onChange={(e) => setYear(e.target.value)}
+                            /> 
+                        </label>
+                        <label>
+                            Engine:
+                            <input
+                                type="text"
+                                name="engine"
+                                value={engine}
+                                onChange={(e) => setEngine(e.target.value)}
+                            /> 
+                        </label>
+                    </p>   
+                    <p>
                     <label>
                         Mileage:
                         <input
@@ -97,18 +102,28 @@ export default function VehicleForm({ onAddVehicle }){
                             onChange={(e) => setLocation(e.target.value)}
                         /> 
                     </label>
-                    <label>
-                        Price: Ksh. 
-                        <input
-                            type="text"
-                            name="price"
-                            value={price}
-                            onChange={(e) => setPrice(e.target.value)}
-                        /> 
-                    </label>
-                    <div className="button">
-                        <button type="submit">Add a Vehicle</button>
-                    </div>
+                    </p>
+                    <p>
+                        <label>
+                            Price: 
+                            <input
+                                type="text"
+                                name="price"
+                                value={price}
+                                onChange={(e) => setPrice(e.target.value)}
+                            /> 
+                        </label> 
+                        <label>
+                            Image Link: 
+                            <input
+                                type="text"
+                                name="image"
+                                value={image}
+                                onChange={(e) => setImage(e.target.value)}
+                            /> 
+                        </label> 
+                    </p>
+                        <button className="button" type="submit">Add a Vehicle</button>
                 </form>
             </div>
     )
