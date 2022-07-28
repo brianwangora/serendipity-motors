@@ -22,17 +22,12 @@ export default function Inventory(){
 
     let vehicleCards = cars.map((car) => (<VehicleCard carName={`${car.make} ${car.model}`} carImage={car.image} carId={car.id} key={car.id}/>)) 
 
-    const handleAddVehicle = (newVehicle) => {
-        setCars([...cars, newVehicle]);
-    }
-
     return(
         <div className="container">
             <h1>SERENDIPITY MOTORS</h1>
             <p>Vehicles Currently in Stock</p>
             <div className="row">
                 {vehicleCards}
-                <VehicleFormDefined onAddVehicle={handleAddVehicle} />
             </div>
         </div>
     )

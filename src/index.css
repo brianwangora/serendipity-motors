@@ -118,10 +118,11 @@ label {
   width: 400px;
   line-height: 26px;
   margin-bottom: 10px;
+  font-weight: 600;
 }
 
 input {
-  height: 20px;
+  height: 25px;
   flex: 0 0 200px;
   margin-left: 10px;
 }

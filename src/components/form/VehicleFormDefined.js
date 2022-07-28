@@ -2,7 +2,7 @@ import React, {useState} from "react";
 
 const VEHICLES = "https://salty-brook-11310.herokuapp.com/cars"
 
-export default function VehicleFormDefined({ onAddVehicle }){
+export default function VehicleFormDefined(){
     const [id, setId] = useState("");
     const [make, setMake] = useState("");
     const [model, setModel] = useState("");
@@ -12,9 +12,18 @@ export default function VehicleFormDefined({ onAddVehicle }){
     const [location, setLocation] = useState("");
     const [price, setPrice] = useState("");
     const [image, setImage] = useState("");
+    const [newVehicle, setNewVehicle] = useState("")
 
     function handleSubmit(e) {
         e.preventDefault();
+        setMake("");  
+        setModel("");
+        setYear("");
+        setEngine("");
+        setMileage("");
+        setLocation("");
+        setPrice("");
+        setImage("");
         const vehicleData = {
             id: id,
             image: image,
@@ -34,18 +43,17 @@ export default function VehicleFormDefined({ onAddVehicle }){
             body: JSON.stringify(vehicleData),
         })
             .then((response) => response.json())
-            .then((newVehicle) => onAddVehicle(newVehicle));
+            .then((newVehicle) => setNewVehicle(newVehicle));
     }
 
     return(
                 <form className="NewVehicle" onSubmit={handleSubmit} >
-                    <p>
                         <label>
                             Make:
                             <input
                                 type="text"
                                 name="make"
-                                value={model}
+                                value={make}
                                 onChange={(e) => setMake(e.target.value)}
                             /> 
                         </label>
@@ -58,8 +66,6 @@ export default function VehicleFormDefined({ onAddVehicle }){
                                 onChange={(e) => setModel(e.target.value)}
                             /> 
                         </label>    
-                    </p>
-                    <p>
                         <label>
                             Year:
                             <input
@@ -78,28 +84,24 @@ export default function VehicleFormDefined({ onAddVehicle }){
                                 onChange={(e) => setEngine(e.target.value)}
                             /> 
                         </label>
-                    </p>   
-                    <p>
                     <label>
                         Mileage:
                         <input
-                            type=""
-                            name=""
+                            type="text"
+                            name="mileage"
                             value={mileage}
                             onChange={(e) => setMileage(e.target.value)}
                         /> 
                     </label>
-                    <label>
-                        Location:
-                        <input
-                            type="text"
-                            name="location"
-                            value={location}
-                            onChange={(e) => setLocation(e.target.value)}
-                        /> 
-                    </label>
-                    </p>
-                    <p>
+                        <label>
+                            Location:
+                            <input
+                                type="text"
+                                name="location"
+                                value={location}
+                                onChange={(e) => setLocation(e.target.value)}
+                            /> 
+                        </label>
                         <label>
                             Price: 
                             <input
@@ -118,7 +120,7 @@ export default function VehicleFormDefined({ onAddVehicle }){
                                 onChange={(e) => setImage(e.target.value)}
                             /> 
                         </label> 
-                    </p>
+
                         <button className="button" type="submit">Add a Vehicle</button>
                 </form>
     )
