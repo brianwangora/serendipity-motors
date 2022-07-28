@@ -39,15 +39,77 @@ export default function VehicleForm({ onAddVehicle }){
             .then((newVehicle) => onAddVehicle(newVehicle));
     }
 
-    function handleDarkModeClick() {
-        setIsDarkMode((isDarkMode) => !isDarkMode);
-    }
-    
     return(
-        <div>
-            <div className={"App " + (isDarkMode ? "dark" : "light")}>
-                <Header isDarkMode={isDarkMode} onDarkModeClick={handleDarkModeClick}>SERENDIPITY MOTORS</Header>
+        <div className="container">
+                <h1>SERENDIPITY MOTORS</h1>
+                <form className="NewVehicle" onSubmit={handleSubmit} >
+                    <label>
+                        Make:
+                        <input
+                            type="text"
+                            name="make"
+                            value={model}
+                            onChange={(e) => setMake(e.target.value)}
+                        /> 
+                    </label>
+                    <label>
+                        Model:
+                        <input
+                            type="text"
+                            name="model"
+                            value={model}
+                            onChange={(e) => setModel(e.target.value)}
+                        /> 
+                    </label>
+                    <label>
+                        Year:
+                        <input
+                            type="text"
+                            name="year"
+                            value={year}
+                            onChange={(e) => setYear(e.target.value)}
+                        /> 
+                    </label>
+                    <label>
+                        Engine:
+                        <input
+                            type="text"
+                            name="engine"
+                            value={engine}
+                            onChange={(e) => setEngine(e.target.value)}
+                        /> 
+                    </label>
+                    <label>
+                        Mileage:
+                        <input
+                            type=""
+                            name=""
+                            value={mileage}
+                            onChange={(e) => setMileage(e.target.value)}
+                        /> 
+                    </label>
+                    <label>
+                        Location:
+                        <input
+                            type="text"
+                            name="location"
+                            value={location}
+                            onChange={(e) => setLocation(e.target.value)}
+                        /> 
+                    </label>
+                    <label>
+                        Price: Ksh. 
+                        <input
+                            type="text"
+                            name="price"
+                            value={price}
+                            onChange={(e) => setPrice(e.target.value)}
+                        /> 
+                    </label>
+                    <div className="button">
+                        <button type="submit">Add a Vehicle</button>
+                    </div>
+                </form>
             </div>
-        </div>
     )
 }
