@@ -1,10 +1,8 @@
-import React, {useState}from "react";
-import Header from "../header/Header";
+import React, {useState} from "react";
 
 const VEHICLES = "https://salty-brook-11310.herokuapp.com/cars"
 
-export default function VehicleForm({ onAddVehicle }){
-    const [isDarkMode, setIsDarkMode] = useState(false);
+export default function VehicleFormDefined({ onAddVehicle }){
     const [id, setId] = useState("");
     const [make, setMake] = useState("");
     const [model, setModel] = useState("");
@@ -40,8 +38,6 @@ export default function VehicleForm({ onAddVehicle }){
     }
 
     return(
-        <div className="container">
-                <h1>SERENDIPITY MOTORS</h1>
                 <form className="NewVehicle" onSubmit={handleSubmit} >
                     <p>
                         <label>
@@ -125,6 +121,5 @@ export default function VehicleForm({ onAddVehicle }){
                     </p>
                         <button className="button" type="submit">Add a Vehicle</button>
                 </form>
-            </div>
     )
 }

@@ -5,7 +5,7 @@ import Navbar from "../navbar/Navbar";
 import Inventory from "../inventory/Inventory";
 import Contact from "../contact/Contact";
 import VehicleDetails from "../details/VehicleDetails";
-import VehicleForm from "../form/VehicleForm";
+import VehicleFormDisplayed from "../form/VehicleFormDisplayed";
 
 export default function App(){
   return(
@@ -19,7 +19,7 @@ export default function App(){
         <Route exact path="/contact" element={<Contact/>}></Route>
         <Route exact path="/inventory" element={<Inventory/>}></Route>
         <Route exact path="/inventory/:vehicleId" element={<VehicleDetails/>}></Route>
-        <Route exact path="/vehicleform" element={<VehicleForm/>}></Route>
+        <Route exact path="/vehicleform" element={<VehicleFormDisplayed/>}></Route>
       </Routes>
 
     </Router>
