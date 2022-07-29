@@ -17,6 +17,12 @@ It has 9 component folders; App, Card, Contact, Details, Header, Home, Inventory
 
 it has 4 client-side routes; Home, Contact, Inventory and Add a Vehicle. Whereby Inventory has nested routes that point to more information.
 
+Once you open the URL for the live site, click on any of the links seen at the top of the page. 
+
+You can also refer to this video ("https://www.youtube.com/watch?v=Gc4chFanPhc&t=1s") to explain how to move around on the site.
+
+The links are explained below.
+
 ### 1. Home
 Here the user is presented with information about the dealership and can toggle dark mode or light mode depending on preference.
 
