@@ -38,7 +38,7 @@ export default function VehicleDetails(){
         <div className="container">
             <center>
                 <h2>{name}</h2>
-                <img src={image} style={{height: 250 + 'px', width: 300 + 'px',}} />
+                <img src={image} style={{height: 250 + 'px', width: 300 + 'px',}} alt={name} />
                 <p>Important information about this {name};</p>
                 <p>Year of Manufacture: {year},</p>
                 <p>Engine: {engine},</p>
