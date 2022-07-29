@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/serendipity-motors/static/css/main.2cbc6376.css",
-    "main.js": "/serendipity-motors/static/js/main.f29358bc.js",
+    "main.js": "/serendipity-motors/static/js/main.62a6b3c0.js",
     "static/js/787.d5ac8416.chunk.js": "/serendipity-motors/static/js/787.d5ac8416.chunk.js",
     "index.html": "/serendipity-motors/index.html",
     "main.2cbc6376.css.map": "/serendipity-motors/static/css/main.2cbc6376.css.map",
-    "main.f29358bc.js.map": "/serendipity-motors/static/js/main.f29358bc.js.map",
+    "main.62a6b3c0.js.map": "/serendipity-motors/static/js/main.62a6b3c0.js.map",
     "787.d5ac8416.chunk.js.map": "/serendipity-motors/static/js/787.d5ac8416.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2cbc6376.css",
-    "static/js/main.f29358bc.js"
+    "static/js/main.62a6b3c0.js"
   ]
 }
