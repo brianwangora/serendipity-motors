@@ -5,7 +5,9 @@
 
 
 ## API
-The API used is: "https://salty-brook-11310.herokuapp.com/cars"
+Launch the local json server to view the API.
+In the terminal, write the following: json-server --watch db.json
+The server will launch at: http://localhost:3000/cars 
 
 ## Live Site
 The project is hosted on: "https://brianwangora.github.io/serendipity-motors"
