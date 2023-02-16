@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-const VEHICLES = "https://salty-brook-11310.herokuapp.com/cars"
+const VEHICLES = "http://localhost:3000/cars"
 
 export default function VehicleFormDefined(){
     const [id, setId] = useState("");
