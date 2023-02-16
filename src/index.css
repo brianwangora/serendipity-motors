@@ -126,3 +126,15 @@ input {
   flex: 0 0 200px;
   margin-left: 10px;
 }
+
+.card {
+  margin: 30px;
+}
+
+.card-img-top {
+  max-width: 20rem;
+  max-height: 40rem;
+  padding-top: 20px;
+  border: none;
+  border-radius: 20px;
+}
