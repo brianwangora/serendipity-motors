@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 // const VEHICLE_INFO = "http://localhost:3000/cars/"
-const VEHICLE_INFO = "https://api.npoint.io/f2cc3422bff618316460/cars"
+const VEHICLE_INFO = "https://api.npoint.io/f2cc3422bff618316460/cars/"
 
 
 
@@ -17,7 +17,7 @@ export default function VehicleDetails(){
 
     let {vehicleId} = useParams()
 
-    const actualInfo = VEHICLE_INFO + vehicleId
+    const actualInfo = VEHICLE_INFO + (vehicleId - 1)
 
     const vehicleFetcher = () => {
         fetch (actualInfo)
