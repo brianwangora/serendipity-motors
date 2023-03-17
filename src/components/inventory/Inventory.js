@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import VehicleCard from "../card/VehicleCard";
 
-const VEHICLES = "http://localhost:3000/cars"
+const VEHICLES = "https://api.npoint.io/f2cc3422bff618316460/cars"
 export default function Inventory(){
     const [cars, setCars] = useState([])
 

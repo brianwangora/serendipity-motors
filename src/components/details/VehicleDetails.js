@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-const VEHICLE_INFO = "http://localhost:3000/cars/"
+// const VEHICLE_INFO = "http://localhost:3000/cars/"
+const VEHICLE_INFO = "https://api.npoint.io/f2cc3422bff618316460/cars"
+
+
 
 export default function VehicleDetails(){
     const [image, setImage] = useState("")

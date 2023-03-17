@@ -9,6 +9,8 @@ Launch the local json server to view the API.
 In the terminal, write the following: json-server --watch db.json
 The server will launch at: http://localhost:3000/cars 
 
+The json is hosted at: https://api.npoint.io/f2cc3422bff618316460/cars
+
 ## Live Site
 The project is hosted on: "https://brianwangora.github.io/serendipity-motors"
 
