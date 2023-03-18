@@ -12,7 +12,7 @@ The server will launch at: http://localhost:3000/cars
 The json is hosted at: https://api.npoint.io/f2cc3422bff618316460/cars
 
 ## Live Site
-The project is hosted on: "https://brianwangora.github.io/serendipity-motors"
+The project is hosted on: "https://serendipity-motors.vercel.app/serendipity-motors"
 
 ## Description
 This is a single web application with 1 index.html file for a car dealership called Serendipity Motors.
